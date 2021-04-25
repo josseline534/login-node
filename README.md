@@ -51,5 +51,8 @@ Incluir middlewares de morgan, passport, session, body-parser, cookie-parser y f
 Requerir express y utilizar el metodo Router de express, crear las rutas y utilizar el controlador y exportar las rutas
 
 ### CONTROLLERS
-Crear un objeto que contenga los metodos que se van a utilizar por cada ruta
+Crear un objeto que contenga los metodos que se van a utilizar por cada ruta.
+
+## PARTE 3
+
 
