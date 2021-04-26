@@ -13,7 +13,6 @@ const session = require('express-session')
 
 const db = require('./config/dataBase')
 const routes = require('./app/routes/routes')
-const configPassport = require('./config/passport')
 
 // settings
 const app = express()
@@ -32,7 +31,6 @@ app.use(session({
     resave:false,
     saveUninitialized: false
 }))
-//configPassport(passport)
 app.use(passport.initialize()) // autenticación
 app.use(passport.session()) // guarda la sesión
 app.use(flash()) // pasar sms en html

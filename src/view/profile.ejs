@@ -1,0 +1,27 @@
+<%- include('./partials/_header.ejs'); -%>
+<div class="container">
+    <header class="text-center">
+        <h1>Profile Page</h1>
+        <a href="/logout" class="btn btn-dark btn-sm"><i class="fas fa-sign-out-alt"></i> Salir</a>
+    </header>
+    <hr>
+    <div class="container">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title"><i class="fas fa-user"></i> Local</h3>
+                    <p>
+                        <strong>ID:</strong><%= user._id%>
+                        <br>
+                        <strong>Email:</strong><%= user.email%>
+                        <br>
+                        <strong>Contraseña:</strong><%= user.password%>
+                        <br>
+                        <a href="/logout" class="btn btn-dark btn-sm"><i class="fas fa-sign-out-alt"></i> Salir</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('./partials/_footer.ejs'); -%>
